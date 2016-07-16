@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Animation>
+  <LayerInfo Layer = "0" TextureName = "back_ground.jpg" LoopCount = "0" Effect = "0">
+    <FrameInfo Frame = "0" Rotate = "0"
+      CutLeft = "0" CutTop = "0" CutRight = "500" CutBottom = "400"
+      Left = "0" Top = "0" Right = "930" Bottom = "568" 
+      R = "255" G = "255" B = "255" A = "255"/>      
+  </LayerInfo>
+</Animation>

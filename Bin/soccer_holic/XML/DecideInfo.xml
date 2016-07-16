@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<DecideInfoList>
+<Data Index="0.0" Type="1.0" Standard="0.0" Standard_Detail="0.0" Targeting="0.0"/>
+<Data Index="1.0" Type="1.0" Standard="2.0" Standard_Detail="0.0" Targeting="5.0"/>
+<Data Index="2.0" Type="1.0" Standard="1.0" Standard_Detail="0.0" Targeting="1.0"/>
+<Data Index="3.0" Type="1.0" Standard="1.0" Standard_Detail="0.0" Targeting="2.0"/>
+<Data Index="4.0" Type="1.0" Standard="1.0" Standard_Detail="0.0" Targeting="3.0"/>
+<Data Index="5.0" Type="1.0" Standard="1.0" Standard_Detail="0.0" Targeting="4.0"/>
+<Data Index="6.0" Type="1.0" Standard="4.0" Standard_Detail="0.0" Targeting="1.0"/>
+<Data Index="7.0" Type="1.0" Standard="4.0" Standard_Detail="0.0" Targeting="2.0"/>
+<Data Index="8.0" Type="1.0" Standard="4.0" Standard_Detail="0.0" Targeting="3.0"/>
+<Data Index="9.0" Type="1.0" Standard="4.0" Standard_Detail="0.0" Targeting="4.0"/>
+<Data Index="10.0" Type="1.0" Standard="3.0" Standard_Detail="13.0" Targeting="6.0"/>
+<Data Index="11.0" Type="1.0" Standard="3.0" Standard_Detail="14.0" Targeting="6.0"/>
+<Data Index="12.0" Type="1.0" Standard="3.0" Standard_Detail="3.0" Targeting="6.0"/>
+<Data Index="13.0" Type="1.0" Standard="5.0" Standard_Detail="1.0" Targeting="6.0"/>
+<Data Index="14.0" Type="1.0" Standard="5.0" Standard_Detail="2.0" Targeting="6.0"/>
+</DecideInfoList>

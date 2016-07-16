@@ -1,0 +1,14 @@
+<ExcelList>
+	<Excel File = ".\Excel\Character.xlsx">
+		<Sheet Name = "Character" Key = "Index"/>
+	</Excel>
+
+	<Excel File = ".\Excel\PositionProficiency.xlsx">
+		<Sheet Name = "PositionProficiency" Key = "Index"/>
+	</Excel>
+
+	<Excel File = ".\Excel\Decide.xlsx">
+		<Sheet Name = "DecideInfo" Key = "Index"/>
+	</Excel>
+
+</ExcelList>

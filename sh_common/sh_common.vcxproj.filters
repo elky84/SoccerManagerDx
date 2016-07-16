@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{8461a385-6032-409b-a405-b22c8818c2ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MetaData">
+      <UniqueIdentifier>{74199d36-ed0d-4b59-b3dc-1f2ffbe426cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Player">
+      <UniqueIdentifier>{626c41c5-3d4f-4d59-9668-0e94b87103d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Map">
+      <UniqueIdentifier>{20b3ddaa-5142-47e4-9e36-c7c5acc2d58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Group">
+      <UniqueIdentifier>{a075bde2-cecf-4646-ade6-9ab099e376a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Logic">
+      <UniqueIdentifier>{35d941ae-9f02-43b5-9342-e0a3981105ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Logic\Action">
+      <UniqueIdentifier>{bb86303c-4582-4f41-8a18-7f9917d98ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Logic\Decide">
+      <UniqueIdentifier>{a388897e-0c4a-47ff-828e-9535b622b26b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Logic\Turn">
+      <UniqueIdentifier>{688eb8ff-20f8-4664-8385-3c38f67323f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Card">
+      <UniqueIdentifier>{5a57ae89-cc44-4681-892f-3a7a8ff7a362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Game">
+      <UniqueIdentifier>{3ed429d2-f562-4173-bc02-a58d365c262d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MetaData.h">
+      <Filter>MetaData</Filter>
+    </ClInclude>
+    <ClInclude Include="SHTypeDefinition.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="SHCorps.h">
+      <Filter>Contents\Group</Filter>
+    </ClInclude>
+    <ClInclude Include="SHSquad.h">
+      <Filter>Contents\Group</Filter>
+    </ClInclude>
+    <ClInclude Include="SHAction.h">
+      <Filter>Contents\Logic\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="SHFormation.h">
+      <Filter>Contents\Group</Filter>
+    </ClInclude>
+    <ClInclude Include="SHCard.h">
+      <Filter>Contents\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="SHCardFactory.h">
+      <Filter>Contents\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="SHMap.h">
+      <Filter>Contents\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="SHTurn.h">
+      <Filter>Contents\Logic\Turn</Filter>
+    </ClInclude>
+    <ClInclude Include="SHDecide.h">
+      <Filter>Contents\Logic\Decide</Filter>
+    </ClInclude>
+    <ClInclude Include="SHPlayer.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="SHGame.h">
+      <Filter>Contents\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="SHBall.h">
+      <Filter>Contents\Map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SHCorps.cpp">
+      <Filter>Contents\Group</Filter>
+    </ClCompile>
+    <ClCompile Include="SHSquad.cpp">
+      <Filter>Contents\Group</Filter>
+    </ClCompile>
+    <ClCompile Include="SHAction.cpp">
+      <Filter>Contents\Logic\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="SHFormation.cpp">
+      <Filter>Contents\Group</Filter>
+    </ClCompile>
+    <ClCompile Include="SHCard.cpp">
+      <Filter>Contents\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="SHCardFactory.cpp">
+      <Filter>Contents\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="SHMap.cpp">
+      <Filter>Contents\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="SHTurn.cpp">
+      <Filter>Contents\Logic\Turn</Filter>
+    </ClCompile>
+    <ClCompile Include="SHDecide.cpp">
+      <Filter>Contents\Logic\Decide</Filter>
+    </ClCompile>
+    <ClCompile Include="SHPlayer.cpp">
+      <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="SHGame.cpp">
+      <Filter>Contents\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="SHBall.cpp">
+      <Filter>Contents\Map</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

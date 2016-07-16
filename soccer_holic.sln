@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "soccer_holic", "soccer_holic\soccer_holic.vcxproj", "{68B9556A-EF3A-4440-B1F4-AEB678B35824}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C} = {1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}
+		{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58} = {9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}
+		{DD39B9EE-7AC8-42B0-92DB-477C6B680AA2} = {DD39B9EE-7AC8-42B0-92DB-477C6B680AA2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-view", "..\light-view\Src\light-view.vcxproj", "{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light", "..\light\src\light.vcxproj", "{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sh_common", "sh_common\sh_common.vcxproj", "{DD39B9EE-7AC8-42B0-92DB-477C6B680AA2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C} = {1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}
+		{3016BC8B-06B1-4B12-9EB6-7C03C4C47351} = {3016BC8B-06B1-4B12-9EB6-7C03C4C47351}
+		{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58} = {9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-excel", "..\light-excel\Src\light-excel.vcxproj", "{3016BC8B-06B1-4B12-9EB6-7C03C4C47351}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68B9556A-EF3A-4440-B1F4-AEB678B35824}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68B9556A-EF3A-4440-B1F4-AEB678B35824}.Debug|Win32.Build.0 = Debug|Win32
+		{68B9556A-EF3A-4440-B1F4-AEB678B35824}.Release|Win32.ActiveCfg = Release|Win32
+		{68B9556A-EF3A-4440-B1F4-AEB678B35824}.Release|Win32.Build.0 = Release|Win32
+		{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}.Debug|Win32.Build.0 = Debug|Win32
+		{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}.Release|Win32.ActiveCfg = Release|Win32
+		{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}.Release|Win32.Build.0 = Release|Win32
+		{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}.Debug|Win32.Build.0 = Debug|Win32
+		{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}.Release|Win32.ActiveCfg = Release|Win32
+		{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}.Release|Win32.Build.0 = Release|Win32
+		{DD39B9EE-7AC8-42B0-92DB-477C6B680AA2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD39B9EE-7AC8-42B0-92DB-477C6B680AA2}.Debug|Win32.Build.0 = Debug|Win32
+		{DD39B9EE-7AC8-42B0-92DB-477C6B680AA2}.Release|Win32.ActiveCfg = Release|Win32
+		{DD39B9EE-7AC8-42B0-92DB-477C6B680AA2}.Release|Win32.Build.0 = Release|Win32
+		{3016BC8B-06B1-4B12-9EB6-7C03C4C47351}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3016BC8B-06B1-4B12-9EB6-7C03C4C47351}.Debug|Win32.Build.0 = Debug|Win32
+		{3016BC8B-06B1-4B12-9EB6-7C03C4C47351}.Release|Win32.ActiveCfg = Release|Win32
+		{3016BC8B-06B1-4B12-9EB6-7C03C4C47351}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
