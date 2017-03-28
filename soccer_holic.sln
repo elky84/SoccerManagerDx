@@ -10,9 +10,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "soccer_holic", "soccer_holi
 		{DD39B9EE-7AC8-42B0-92DB-477C6B680AA2} = {DD39B9EE-7AC8-42B0-92DB-477C6B680AA2}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-view", "..\light-view\Src\light-view.vcxproj", "{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-view", "..\light\light-view\Src\light-view.vcxproj", "{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light", "..\light\src\light.vcxproj", "{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light", "..\light\light\src\light.vcxproj", "{1F0BAD05-FD7A-4ED2-AB46-DFDC00C1A61C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sh_common", "sh_common\sh_common.vcxproj", "{DD39B9EE-7AC8-42B0-92DB-477C6B680AA2}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -21,7 +21,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sh_common", "sh_common\sh_c
 		{9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58} = {9EE26FBD-F027-43E5-ADFB-DCC3D97E6B58}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-excel", "..\light-excel\Src\light-excel.vcxproj", "{3016BC8B-06B1-4B12-9EB6-7C03C4C47351}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "light-excel", "..\light\light-excel\Src\light-excel.vcxproj", "{3016BC8B-06B1-4B12-9EB6-7C03C4C47351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
