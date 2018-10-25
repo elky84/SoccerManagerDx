@@ -362,136 +362,136 @@ public:
 	{
 		PositionProficiency Instance;
 		light::XMLParser parser;
-		light::ScopeProfiler profiler(__FUNCTIONW__, 10, _T("./XML/PositionProficiency.XML"));
-		if( false == parser.read_file(_T("./XML/PositionProficiency.XML")))
+		light::ScopeProfiler profiler(__FUNCTIONW__, 10, L"./XML/PositionProficiency.XML");
+		if( false == parser.read_file(L"./XML/PositionProficiency.XML"))
 		{
-			LOG_ERROR(_T("%s, Open() Failed. Path(./XML/PositionProficiency.XML"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, Open() Failed. Path(./XML/PositionProficiency.XML");
 			return false;
 		}
 
-		if ( false == parser.execute(_T("/PositionProficiencyList")))
+		if ( false == parser.execute(L"/PositionProficiencyList"))
 		{
-			LOG_ERROR(_T("%s, execute() Failed. /PositionProficiencyList"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, execute() Failed. /PositionProficiencyList");
 			return false;
 		}
 
-		if ( false == parser.bind_elem(_T("Data")))
+		if ( false == parser.bind_elem(L"Data"))
 		{
-			LOG_ERROR(_T("%s, execute() Failed. Data"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, execute() Failed. Data");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("AMC"), Instance.AMCReference()))
+		if ( false == parser.bind_attrib(L"AMC", Instance.AMCReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.AMCReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.AMCReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("CB"), Instance.CBReference()))
+		if ( false == parser.bind_attrib(L"CB", Instance.CBReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.CBReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.CBReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("CF"), Instance.CFReference()))
+		if ( false == parser.bind_attrib(L"CF", Instance.CFReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.CFReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.CFReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("CM"), Instance.CMReference()))
+		if ( false == parser.bind_attrib(L"CM", Instance.CMReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.CMReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.CMReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("DM"), Instance.DMReference()))
+		if ( false == parser.bind_attrib(L"DM", Instance.DMReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.DMReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.DMReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("GK"), Instance.GKReference()))
+		if ( false == parser.bind_attrib(L"GK", Instance.GKReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.GKReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.GKReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("Index"), Instance.IndexReference()))
+		if ( false == parser.bind_attrib(L"Index", Instance.IndexReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.IndexReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.IndexReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("LAM"), Instance.LAMReference()))
+		if ( false == parser.bind_attrib(L"LAM", Instance.LAMReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.LAMReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.LAMReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("LB"), Instance.LBReference()))
+		if ( false == parser.bind_attrib(L"LB", Instance.LBReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.LBReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.LBReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("LM"), Instance.LMReference()))
+		if ( false == parser.bind_attrib(L"LM", Instance.LMReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.LMReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.LMReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("LWB"), Instance.LWBReference()))
+		if ( false == parser.bind_attrib(L"LWB", Instance.LWBReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.LWBReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.LWBReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("LWF"), Instance.LWFReference()))
+		if ( false == parser.bind_attrib(L"LWF", Instance.LWFReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.LWFReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.LWFReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("RAM"), Instance.RAMReference()))
+		if ( false == parser.bind_attrib(L"RAM", Instance.RAMReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.RAMReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.RAMReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("RB"), Instance.RBReference()))
+		if ( false == parser.bind_attrib(L"RB", Instance.RBReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.RBReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.RBReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("RM"), Instance.RMReference()))
+		if ( false == parser.bind_attrib(L"RM", Instance.RMReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.RMReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.RMReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("RWB"), Instance.RWBReference()))
+		if ( false == parser.bind_attrib(L"RWB", Instance.RWBReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.RWBReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.RWBReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("RWF"), Instance.RWFReference()))
+		if ( false == parser.bind_attrib(L"RWF", Instance.RWFReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.RWFReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.RWFReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("SS"), Instance.SSReference()))
+		if ( false == parser.bind_attrib(L"SS", Instance.SSReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.SSReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.SSReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("SW"), Instance.SWReference()))
+		if ( false == parser.bind_attrib(L"SW", Instance.SWReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.SWReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.SWReference()");
 			return false;
 		}
 
@@ -505,7 +505,7 @@ public:
 
 	bool Get(int& key, PositionProficiency& Instance)
 	{
-		std::map<int, PositionProficiency>::iterator it = m_Map.find(key);
+		auto it = m_Map.find(key);
 		{
 			return false;
 		}

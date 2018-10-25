@@ -110,52 +110,52 @@ public:
 	{
 		DecideInfo Instance;
 		light::XMLParser parser;
-		light::ScopeProfiler profiler(__FUNCTIONW__, 10, _T("./XML/DecideInfo.XML"));
-		if( false == parser.read_file(_T("./XML/DecideInfo.XML")))
+		light::ScopeProfiler profiler(__FUNCTIONW__, 10, L"./XML/DecideInfo.XML");
+		if( false == parser.read_file(L"./XML/DecideInfo.XML"))
 		{
-			LOG_ERROR(_T("%s, Open() Failed. Path(./XML/DecideInfo.XML"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, Open() Failed. Path(./XML/DecideInfo.XML");
 			return false;
 		}
 
-		if ( false == parser.execute(_T("/DecideInfoList")))
+		if ( false == parser.execute(L"/DecideInfoList"))
 		{
-			LOG_ERROR(_T("%s, execute() Failed. /DecideInfoList"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, execute() Failed. /DecideInfoList");
 			return false;
 		}
 
-		if ( false == parser.bind_elem(_T("Data")))
+		if ( false == parser.bind_elem(L"Data"))
 		{
-			LOG_ERROR(_T("%s, execute() Failed. Data"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, execute() Failed. Data");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("Index"), Instance.IndexReference()))
+		if ( false == parser.bind_attrib(L"Index", Instance.IndexReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.IndexReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.IndexReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("Standard"), Instance.StandardReference()))
+		if ( false == parser.bind_attrib(L"Standard", Instance.StandardReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.StandardReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.StandardReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("Standard_Detail"), Instance.Standard_DetailReference()))
+		if ( false == parser.bind_attrib(L"Standard_Detail", Instance.Standard_DetailReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.Standard_DetailReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.Standard_DetailReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("Targeting"), Instance.TargetingReference()))
+		if ( false == parser.bind_attrib(L"Targeting", Instance.TargetingReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.TargetingReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.TargetingReference()");
 			return false;
 		}
 
-		if ( false == parser.bind_attrib(_T("Type"), Instance.TypeReference()))
+		if ( false == parser.bind_attrib(L"Type", Instance.TypeReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.TypeReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.TypeReference()");
 			return false;
 		}
 
@@ -169,7 +169,7 @@ public:
 
 	bool Get(int& key, DecideInfo& Instance)
 	{
-		std::map<int, DecideInfo>::iterator it = m_Map.find(key);
+		auto it = m_Map.find(key);
 		{
 			return false;
 		}

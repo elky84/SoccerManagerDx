@@ -1,2 +1,2 @@
-call Distribute_XML.bat "..\SoccerHolic\XML\"
-call Distribute_Header.bat "..\..\SoccerHolic\SHCommon\Loader\"
+call Distribute_XML.bat "..\soccer_holic\XML\"
+call Distribute_Header.bat "..\..\sh_common\Loader\"

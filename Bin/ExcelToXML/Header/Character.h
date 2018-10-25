@@ -18,15 +18,11 @@ public:
 
 		memset(&m_Phy, 0, sizeof(m_Phy));
 
-		memset(&m_Name, 0, sizeof(m_Name));
-
 		memset(&m_Luck, 0, sizeof(m_Luck));
 
 		memset(&m_Int, 0, sizeof(m_Int));
 
 		memset(&m_Index, 0, sizeof(m_Index));
-
-		memset(&m_Image, 0, sizeof(m_Image));
 
 		memset(&m_Dex, 0, sizeof(m_Dex));
 
@@ -311,115 +307,115 @@ public:
 		light::ScopeProfiler profiler(__FUNCTIONW__, 10, L"./XML/Character.XML");
 		if( false == parser.read_file(L"./XML/Character.XML"))
 		{
-			LOG_ERROR(_T("%s, Open() Failed. Path(./XML/Character.XML"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, Open() Failed. Path(./XML/Character.XML");
 			return false;
 		}
 
 		if ( false == parser.execute(L"/CharacterList"))
 		{
-			LOG_ERROR(_T("%s, execute() Failed. /CharacterList"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, execute() Failed. /CharacterList");
 			return false;
 		}
 
 		if ( false == parser.bind_elem(L"Data"))
 		{
-			LOG_ERROR(_T("%s, execute() Failed. Data"), __FUNCTIONW__);
+			LOG_ERROR(L"%s, execute() Failed. Data");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Action_Cooltime", Instance.Action_CooltimeReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.Action_CooltimeReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.Action_CooltimeReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Agi", Instance.AgiReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.AgiReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.AgiReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Cost", Instance.CostReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.CostReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.CostReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Decide", Instance.DecideReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.DecideReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.DecideReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Decide_Cooltime", Instance.Decide_CooltimeReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.Decide_CooltimeReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.Decide_CooltimeReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Dex", Instance.DexReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.DexReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.DexReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Image", Instance.ImageReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.ImageReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.ImageReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Index", Instance.IndexReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.IndexReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.IndexReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Int", Instance.IntReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.IntReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.IntReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Luck", Instance.LuckReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.LuckReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.LuckReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Name", Instance.NameReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.NameReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.NameReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Phy", Instance.PhyReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.PhyReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.PhyReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Sight", Instance.SightReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.SightReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.SightReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Speed", Instance.SpeedReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.SpeedReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.SpeedReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Str", Instance.StrReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.StrReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.StrReference()");
 			return false;
 		}
 
 		if ( false == parser.bind_attrib(L"Wis", Instance.WisReference()))
 		{
-			LOG_ERROR(_T("%s, bind_attrib() Failed. Instance.WisReference()"), __FUNCTIONW__);
+			LOG_ERROR(L"bind_attrib() Failed. Instance.WisReference()");
 			return false;
 		}
 
@@ -433,7 +429,7 @@ public:
 
 	bool Get(int& key, Character& Instance)
 	{
-		std::map<int, Character>::iterator it = m_Map.find(key);
+		auto it = m_Map.find(key);
 		{
 			return false;
 		}
