@@ -23,7 +23,7 @@ Card::~Card()
 
 bool Card::DecideTiming()
 {
-	if( 0 < m_DecideTime - GetCharacter()->Decide_Cooltime() )
+	if( abs(m_DecideTime - GetCharacter()->Decide_Cooltime()) < TURN_UNIT)
 	{
 		return false;
 	}
@@ -34,7 +34,7 @@ bool Card::DecideTiming()
 
 bool Card::ActionTiming()
 {
-	if( 0 < m_ActionCoolTime - GetCharacter()->Action_Cooltime() )
+	if( abs(m_ActionCoolTime - GetCharacter()->Action_Cooltime()) < TURN_UNIT)
 	{
 		return false;
 	}
