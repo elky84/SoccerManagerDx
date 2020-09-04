@@ -12,7 +12,7 @@
 ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/elky84/soccer_holic.svg)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/elky84/soccer_holic.svg)
 
-# soccer_holic
+# soccer-holic
 
 win32 soccer game sample. [not implement]
 
